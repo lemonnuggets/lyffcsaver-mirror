@@ -1,7 +1,7 @@
 {
   "name": "lyffcsaver",
   "version": "1.0.0",
-  "homepage": "https://stcvit.github.io/Lyffcsaver/",
+  "homepage": "https://lemonnuggets.github.io/lyffcsaver-mirror/",
   "private": true,
   "dependencies": {
     "@react-pdf/renderer": "^2.0.17",
@@ -74,5 +74,6 @@
     "verbose": true,
     "transform": {}
   },
-  "proxy": "http://localhost:3001"
+  "proxy": "http://localhost:3001",
+  "packageManager": "yarn@1.22.19"
 }

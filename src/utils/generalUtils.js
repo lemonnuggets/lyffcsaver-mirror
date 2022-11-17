@@ -124,7 +124,7 @@ const populateSlotCombination = async (
   objectToPopulate
 ) => {
   if (window.Worker) {
-    const worker = new Worker("/Lyffcsaver/workers/worker.js");
+    const worker = new Worker("/lyffcsaver-mirror/workers/worker.js");
 
     getSlotMapping();
 
@@ -188,7 +188,7 @@ const populateSlotCombination = async (
 const getSlotCombinations = async (classes, reservedSlots) => {
   console.log(classes, reservedSlots);
   if (window.Worker) {
-    const worker = new Worker("/Lyffcsaver/workers/worker.js");
+    const worker = new Worker("/lyffcsaver-mirror/workers/worker.js");
 
     getSlotMapping();
 
@@ -268,7 +268,7 @@ const getSlotCombinations = async (classes, reservedSlots) => {
  */
 const getTimetables = async (classes, reservedSlots) => {
   if (window.Worker) {
-    const worker = new Worker("/Lyffcsaver/workers/worker.js");
+    const worker = new Worker("/lyffcsaver-mirror/workers/worker.js");
 
     getSlotMapping();
 

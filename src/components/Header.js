@@ -1,9 +1,9 @@
-import styles from "../css/Header.module.css";
-import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from "../assets/logo.svg";
-import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import Joyride, { STATUS } from "react-joyride";
+import { NavLink } from "react-router-dom";
+import logo from "../assets/logo.svg";
+import styles from "../css/Header.module.css";
 
 const Header = ({ router }) => {
   const location = router.location;
@@ -20,14 +20,14 @@ const Header = ({ router }) => {
           </div>
           <br />
           <ul>
-            <li align="inline-start">
+            <li>
               <strong>Change View: </strong>Switch between Timetable and legacy
               views to select your slots
             </li>
-            <li align="inline-start">
+            <li>
               <strong>Clear: </strong>De-Select all selected slots
             </li>
-            <li align="inline-start">
+            <li>
               <strong>Skip: </strong>Scroll to next section
             </li>
           </ul>
@@ -50,7 +50,7 @@ const Header = ({ router }) => {
     {
       target: "#course-select-autocomplete",
       content: (
-        <div align="inline-start">
+        <div>
           Here you can search and select your courses. You can search for
           courses by either their course code or their course title.
           <br />
@@ -86,7 +86,7 @@ const Header = ({ router }) => {
     {
       target: ".staged-course",
       content: (
-        <div align="inline-start">
+        <div>
           <details>
             <summary>
               <strong>Colored Indicator</strong>
@@ -129,7 +129,7 @@ const Header = ({ router }) => {
     {
       target: "#staged-courses-footer",
       content: (
-        <div align="inline-start">
+        <div>
           Total Credits shows how many credits have been added so far.
           <br />
           Clicking on clear removes all added courses so you can have a fresh
@@ -142,7 +142,7 @@ const Header = ({ router }) => {
     {
       target: "#class-selection-section",
       content: (
-        <div align="inline-start">
+        <div>
           Here you can add classes for the currently selected course from
           previous section (highlighted course).
         </div>
@@ -153,7 +153,7 @@ const Header = ({ router }) => {
     {
       target: "#class-selection-query-row",
       content: (
-        <div align="inline-start">
+        <div>
           Use the searchbar to search for a class by Faculty Name or their
           Employee ID.
           <br />
@@ -166,7 +166,7 @@ const Header = ({ router }) => {
     {
       target: ".selectable-class",
       content: (
-        <div align="inline-start">
+        <div>
           Click the green &quot;+&quot; to add class.
           <br />
           <strong>
@@ -180,7 +180,7 @@ const Header = ({ router }) => {
     {
       target: "#class-priority",
       content: (
-        <div align="inline-start">
+        <div>
           The classes that you&apos;ve added for the selected course show up
           here. You can arrange classes based on your priorities.
         </div>
@@ -191,9 +191,7 @@ const Header = ({ router }) => {
     {
       target: ".draggable-class",
       content: (
-        <div align="inline-start">
-          Click and drag with the drag handle to reorder the classes
-        </div>
+        <div>Click and drag with the drag handle to reorder the classes</div>
       ),
       title: <h2>Draggable Class</h2>,
       disableBeacon: true,
@@ -201,7 +199,7 @@ const Header = ({ router }) => {
     {
       target: "#generate-timetables",
       content: (
-        <div align="inline-start">
+        <div>
           Click the button to generate timetables according to courses and
           classes you&apos;ve selected.
           <br />
@@ -219,7 +217,7 @@ const Header = ({ router }) => {
     {
       target: ".timetable-preview",
       content: (
-        <div align="inline-start">
+        <div>
           Here you see a preview for what your generated timetable looks like.
           <br />
           <strong>Try selecting one and then press next when ready.</strong>
@@ -231,7 +229,7 @@ const Header = ({ router }) => {
     {
       target: "#filled-out-timetable",
       content: (
-        <div align="inline-start">
+        <div>
           This is your filled out timetable. You can hover over slots for more
           info.
         </div>
@@ -242,7 +240,7 @@ const Header = ({ router }) => {
     {
       target: "#classes",
       content: (
-        <div align="inline-start">
+        <div>
           Here you can see which class has been selected for each course. By
           default, we pick the class with highest preference. By clicking the
           radio button you can select a different class.
@@ -289,8 +287,8 @@ const Header = ({ router }) => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav activeKey={location.pathname} className={styles.navLinks}>
               <NavLink
-                className={({isActive}) => {
-                  return isActive ? styles.active : null
+                className={({ isActive }) => {
+                  return isActive ? styles.active : null;
                 }}
                 to="/"
                 onClick={() => setExpanded(false)}
@@ -298,8 +296,8 @@ const Header = ({ router }) => {
                 Home
               </NavLink>
               <NavLink
-                className={({isActive}) => {
-                  return isActive ? styles.active : null
+                className={({ isActive }) => {
+                  return isActive ? styles.active : null;
                 }}
                 to="/about"
                 onClick={() => setExpanded(false)}
@@ -307,8 +305,8 @@ const Header = ({ router }) => {
                 About
               </NavLink>
               <NavLink
-                className={({isActive}) => {
-                  return isActive ? styles.active : null
+                className={({ isActive }) => {
+                  return isActive ? styles.active : null;
                 }}
                 to="/faq"
                 onClick={() => setExpanded(false)}
@@ -316,8 +314,8 @@ const Header = ({ router }) => {
                 FAQs
               </NavLink>
               <NavLink
-                className={({isActive}) => {
-                  return isActive ? styles.active : null
+                className={({ isActive }) => {
+                  return isActive ? styles.active : null;
                 }}
                 to="/contact"
                 onClick={() => setExpanded(false)}
