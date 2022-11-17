@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/lyffcsaver-mirror/static/css/main.bbdb666d.chunk.css",
-    "main.js": "/lyffcsaver-mirror/static/js/main.b95d8046.chunk.js",
-    "main.js.map": "/lyffcsaver-mirror/static/js/main.b95d8046.chunk.js.map",
+    "main.js": "/lyffcsaver-mirror/static/js/main.c6714cfa.chunk.js",
+    "main.js.map": "/lyffcsaver-mirror/static/js/main.c6714cfa.chunk.js.map",
     "runtime-main.js": "/lyffcsaver-mirror/static/js/runtime-main.2434c737.js",
     "runtime-main.js.map": "/lyffcsaver-mirror/static/js/runtime-main.2434c737.js.map",
     "static/js/2.f4e7560e.chunk.js": "/lyffcsaver-mirror/static/js/2.f4e7560e.chunk.js",
@@ -40,6 +40,6 @@
     "static/css/3.42d51ddf.chunk.css",
     "static/js/3.ca437f0c.chunk.js",
     "static/css/main.bbdb666d.chunk.css",
-    "static/js/main.b95d8046.chunk.js"
+    "static/js/main.c6714cfa.chunk.js"
   ]
 }
